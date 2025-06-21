@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 /**
- * islower - Entry point
+ * _islower - Entry point
+ * @c: variable
  *
  * Description: Checks if lowercase
  *
