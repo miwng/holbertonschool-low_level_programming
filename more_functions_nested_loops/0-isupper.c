@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * _isupper - Entry point
  *
  * @c: character to check for upper case
  *
