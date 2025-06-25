@@ -19,16 +19,18 @@ void print_triangle(int size)
 		for (triangle = 1; triangle <= size; triangle++)
 		{
 			for (space = size - triangle; space > 0; space--)
+			{
 				_putchar(' ');
-			
+			}
 			for (space = 0; space < triangle; space++)
+			{
 				_putchar('#');
-			
+			}
 			if (triangle == size)
-			       continue;
-
+				continue;
+			
 			_putchar('\n');
 		}
 	}
-	_putchar('\n');	
+	_putchar('\n');
 }
