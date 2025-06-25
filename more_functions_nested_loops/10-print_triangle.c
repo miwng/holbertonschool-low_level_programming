@@ -28,7 +28,6 @@ void print_triangle(int size)
 			}
 			if (triangle == size)
 				continue;
-			
 			_putchar('\n');
 		}
 	}
