@@ -11,15 +11,18 @@
 
 void print_rev(char *s)
 {
-	int length = 0;
+	int length;
+	int reverse;
+	int temp;
 
-	int index;
+	while(*s)
+		_putchar(*s++);
+	
+	temp = *s
 
-	while (s[index++])
-		length++;
-
-	for (index = length - 1; index >= 0; index--)
-		_putchar(s[index]);
-
+	for (reverse = temp - 1; reverse >= 0; reverse--)
+	{
+		_putchar(s[reverse]);	
+	}
 	_putchar('\n');
 }
