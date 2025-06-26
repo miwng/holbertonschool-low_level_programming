@@ -4,7 +4,7 @@
 /**
  * reset_to_98 - Entry point
  *
- * *n: pointer to value of n
+ * @n: pointer to value of n
  *
  * Return: Always 0 (Success)
  */
