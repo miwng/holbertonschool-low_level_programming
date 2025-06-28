@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strncat - Entry point
+ * _strncpy - Entry point
  *
  * @dest: pointer to dest string
  *
@@ -13,7 +13,7 @@
  * Return: Always 0 (Success)
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int count = 0;
 	int src_length = 0;
