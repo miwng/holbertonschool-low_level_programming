@@ -4,21 +4,23 @@
 /**
  * string_toupper - Entry point
  *
- * @ : integer a - array
+ * @str: array
  *
  * Return: Always 0 (Success)
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *str)
 {
-	int uppercase;
+	int uppercase = 0;
 
-	while str[uppercase];
-
-		if str[uppercase] => 'a' && str[uppercase] <= 'z'
+	while (str[uppercase++])
+	
+		if (str[uppercase] >= 'a' && str[uppercase] <= 'z')
+		{
 			str[uppercase] -= 32;
+		}	
 
-		str[uppercase]++;
-
+	uppercase++;
+	
 	return (str);
 }
