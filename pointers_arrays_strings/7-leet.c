@@ -24,7 +24,7 @@ char *leet(char *s)
 		while (loop < 5)
 		{
 			if (s[index] == old[loop] || s[index] + 32 == old[loop])
-			{	
+			{
 				s[index] = new[loop];
 				break;
 			}
