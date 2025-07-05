@@ -6,7 +6,8 @@
  *
  * @haystack: String to be checked for first occurrence of substring needle
  *
- * @needle: Full substring to be checked in string haystack then pointer at beginning of substring
+ * @needle: Full substring to be checked in string haystack
+ * then pointer at beginning of substring
  *
  * Return: Always 0 (Success)
  */
