@@ -2,9 +2,11 @@
 #include <stdio.h>
 
 /**
- * is_prime_number - Entry point
+ * divide - Entry point
  *
- * @n: Number to be checked if prime number, otherwise return 0.
+ * @number: Number to be checked for division.
+ *
+ * @div: Divide
  *
  * Return: Always 0 (Success)
  */
@@ -17,6 +19,14 @@ int divide(int number, int div)
 		return (1);
 	return (divide(number, div + 1));
 }
+
+/**
+ * is_prime_number - Entry point
+ *
+ * @n: Number to be checked if prime number.
+ *
+ * Return: Always 0 (Success)
+ */
 
 int is_prime_number(int n)
 {
