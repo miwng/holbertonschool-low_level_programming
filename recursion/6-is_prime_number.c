@@ -16,14 +16,14 @@ int divide(int number, int div)
 	if (div == number / 2)
 		return (1);
 	return (divide(number, div + 1));
-}	
+}
 
 int is_prime_number(int n)
 {
 	int div = 2;
 
 	if (n <= 1)
-		return(0);
+		return (0);
 	if (n <= 3)
 		return (1);
 
