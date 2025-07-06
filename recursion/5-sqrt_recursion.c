@@ -2,25 +2,39 @@
 #include <stdio.h>
 
 /**
- * _pow_recursion - Entry point
+ * _sqrt - Entry point
  *
- * @x: string
+ * @number: Number to find natural square root
  *
- * @y: s
+ * @root: Root
  *
  * Return: Always 0 (Success)
  */
 
-int _pow_recursion(int x, int y)
+int _sqrt(int number, int root)
 {
-	int index = x;
-
-	if (y < 0)
+	if ((root * root) == number)
+		return (root);
+	if (root == number / 2)
 		return (-1);
-	else if (y == 0)
+	return (_sqrt(number, root + 1));
+}
+
+/**
+ * _sqrt_recursion - Entry point
+ *
+ * @n: Number to return natural square root, if not return -1.
+ *
+ * Return: Always 0 (Success)
+ */
+
+int _sqrt_recursion(int n)
+{
+	int root = 0;
+
+	if (n < 0)
+		return (-1);
+	if (n == 1)
 		return (1);
-
-	index *= _pow_recursion(x, y - 1);
-
-	return (index);
+	return (_sqrt(n, root));
 }
