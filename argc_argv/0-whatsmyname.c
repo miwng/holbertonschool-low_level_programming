@@ -3,6 +3,8 @@
 /**
  * main - Entry point
  *
+ * @argc: No of arguments
+ *
  * @argv: Array of pointers
  *
  * Return: Always 0 (Success)
