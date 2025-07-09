@@ -22,7 +22,7 @@ int **alloc_grid(int width, int height)
 
 	if (height <= 0)
 		return (NULL);
-	
+
 	shape = malloc(sizeof(int *) * height);
 
 	if (shape == NULL)
