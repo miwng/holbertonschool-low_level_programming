@@ -3,44 +3,50 @@
 #include <stdlib.h>
 
 /**
- * str_concat - Entry point
+ * alloc_grid - Entry point
  *
- * @s1: contents to fill new memory space
+ * @width: width of 2D array of integers
  *
- * @s2: follows s1 contaents
+ * @height: height of 2D array of integers
  *
  * Return: Always 0 (Success)
  */
 
-char *str_concat(char *s1, char *s2)
+int **alloc_grid(int width, int height)
 {
-	int index;
-	int size = 0;
-	char *space;
-	int sarray = 0;
+	int **shape;
+	int hindex, windex;
 
-	if (s1 == NULL)
-		s1 = "";
-
-	if (s2 == NULL)
-		s2 = "";
-
-	for (index = 0; s1[index]; index++)
-		size++;
-
-	for (index = 0; s2[index]; index++)
-		size++;
-
-	space = malloc(sizeof(char) * size);
-
-	if (space == NULL)
+	if (width <= 0)
 		return (NULL);
 
-	for (index = 0; s1[index]; index++)
-		space[sarray++] = s1[index];
+	if (height <= 0)
+		return (NULL);
+	
+	shape = malloc(sizeof(int *) * height);
 
-	for (index = 0; s2[index]; index++)
-		space[sarray++] = s2[index];
+	if (shape == NULL)
+		return (NULL);
 
-	return (space);
+	for (hindex = 0; hindex < height; hindex++)
+	{
+		shape[hindex] = malloc(sizeof(int) * width);
+
+		if (shape[hindex] == NULL)
+		{
+			for (; hindex >= 0; hindex--)
+				free(shape[hindex]);
+
+			free(shape);
+			return (NULL);
+		}
+	}
+
+	for (hindex = 0; hindex < height; hindex++)
+	{
+		for (windex = 0; windex < width; windex++)
+			shape[hindex][windex] = 0;
+	}
+
+	return (shape);
 }
