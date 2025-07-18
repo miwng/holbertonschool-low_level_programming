@@ -9,9 +9,9 @@ int op_mod(int a, int b);
 
 /**
  * op_add - addition of 2 ints
- * 
+ *
  * @a: int number one
- * 
+ *
  * @b: int number two
  *
  * Return: sum
@@ -27,8 +27,8 @@ int op_add(int a, int b)
  *
  * @a: first number
  *
- * @b: second number 
- * 
+ * @b: second number
+ *
  * Return: subtraction
  */
 
