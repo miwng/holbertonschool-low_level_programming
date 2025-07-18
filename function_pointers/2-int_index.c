@@ -8,6 +8,8 @@
  * @size: size of array
  *
  * @cmp: pointer to function to action
+ *
+ * Return: Index of first element that doesn't return 0, otherwise -1.
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
