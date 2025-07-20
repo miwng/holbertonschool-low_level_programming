@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * print_numbers - print string
+ * print_strings - print string
  *
  * @separator: separates string
  *
