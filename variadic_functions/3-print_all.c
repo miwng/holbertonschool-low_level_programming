@@ -10,7 +10,7 @@ void print_all(const char * const format, ...);
 
 /**
  * print_char - Print char
- * 
+ *
  * @arg: Arguments
  *
  */
@@ -38,7 +38,7 @@ void print_int(va_list arg)
 
 /**
  * print_float - Print float
- * 
+ *
  * @arg: Arguments
  *
  */
@@ -77,7 +77,7 @@ void print_string(va_list arg)
  * @format: A string
  *
  * @...: Argument variables.
- * 
+ *
  */
 void print_all(const char * const format, ...)
 {
