@@ -53,7 +53,7 @@ void close_file(int fd)
  *
  * @argv: Array of pointers to argument
  *
- * Return: 0. 
+ * Return: 0.
  *
  * Description: If the argument count is incorrect - exit code 97.
  *              If file_from does not exist or cannot be read - exit code 98.
